@@ -1,0 +1,88 @@
+/* header responsive css */
+@media (max-width: 1400px) {
+  html {
+    font-size: 0.6rem;
+  }
+}
+@media (max-width: 1200px) {
+  html {
+    font-size: 0.55rem;
+  }
+}
+@media (max-width: 700px) {
+  html {
+    font-size: 0.5rem;
+  }
+  .text-box h1 {
+    font-size: 3.5rem;
+  }
+  .navLinks {
+    background: #f44366;
+    height: 100vh;
+    width: 200px;
+    position: absolute;
+    top: 0;
+    right: -220px;
+    z-index: 2;
+  }
+  nav ul {
+    text-align: left;
+    padding: 0 4em;
+  }
+  nav ul li {
+    display: block;
+    padding: 2em 0;
+  }
+  nav ul li a {
+    font-size: 1.9rem;
+  }
+  nav .fa {
+    display: block;
+  }
+  nav .checkBox:checked ~ .navLinks {
+    right: 0;
+  }
+  nav .checkBox {
+    display: block;
+    position: absolute;
+    top: 22px;
+    right: 43px;
+    height: 20px;
+    width: 20px;
+    opacity: 0;
+    z-index: 999;
+  }
+
+  nav .close:checked ~ .navLinks {
+    right: -200px;
+  }
+  .close {
+    display: block;
+    position: absolute;
+    top: 14px;
+    right: 171px;
+    width: 18px;
+    height: 18px;
+    z-index: 999;
+    opacity: 0;
+  }
+
+  header {
+    min-height: 53vh;
+    padding-top: 2em;
+padding-bottom: 15em;
+  }
+  .course {
+    padding: 4em 0;
+  }
+
+  .campus-row,
+  .Facilities-row,
+  .course-row {
+    flex-direction: column;
+  }
+  .testomonial-col img {
+    width: 21rem;
+    height: 5rem;
+}
+}
